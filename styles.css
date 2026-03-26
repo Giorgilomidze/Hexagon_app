@@ -1,0 +1,22 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.hex-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+/* Offset logic for hexagonal feel on a grid */
+.hex-offset {
+    transform: translateY(50%);
+}
+@media (max-width: 768px) {
+    .hex-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hex-offset {
+        transform: translateY(0);
+    }
+}

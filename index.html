@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#306197",
+              "tertiary": "#625b77",
+              "surface-bright": "#f8f9ff",
+              "tertiary-fixed-dim": "#d0c7e8",
+              "primary-fixed-dim": "#c7d3ff",
+              "tertiary-container": "#ded5f7",
+              "surface-container-highest": "#d3e4ff",
+              "on-tertiary-fixed-variant": "#58526e",
+              "on-primary-container": "#0448bc",
+              "background": "#f8f9ff",
+              "on-surface": "#00345e",
+              "primary": "#2156ca",
+              "surface-tint": "#2156ca",
+              "on-tertiary-fixed": "#3c3650",
+              "error-container": "#fe8983",
+              "primary-container": "#dbe1ff",
+              "on-secondary-fixed-variant": "#5b5b5f",
+              "secondary-dim": "#535356",
+              "on-error-container": "#752121",
+              "error": "#9f403d",
+              "secondary-container": "#e4e2e6",
+              "surface": "#f8f9ff",
+              "inverse-on-surface": "#8f9eb4",
+              "tertiary-fixed": "#ded5f7",
+              "outline": "#4f7db5",
+              "error-dim": "#4e0309",
+              "surface-container-high": "#dce9ff",
+              "inverse-primary": "#608bff",
+              "primary-fixed": "#dbe1ff",
+              "surface-container": "#e6eeff",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#f8f7ff",
+              "on-tertiary-container": "#4f4964",
+              "primary-dim": "#0649bd",
+              "secondary-fixed": "#e4e2e6",
+              "on-background": "#00345e",
+              "on-error": "#fff7f6",
+              "inverse-surface": "#010f20",
+              "secondary": "#5f5f62",
+              "on-primary-fixed": "#003896",
+              "on-secondary-fixed": "#3f3f43",
+              "on-primary-fixed-variant": "#1c53c6",
+              "tertiary-dim": "#554f6b",
+              "surface-variant": "#d3e4ff",
+              "on-secondary": "#faf8fc",
+              "secondary-fixed-dim": "#d5d4d8",
+              "outline-variant": "#87b5f0",
+              "surface-dim": "#c4dcff",
+              "on-secondary-container": "#515155",
+              "surface-container-low": "#eff4ff",
+              "on-tertiary": "#fdf7ff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Shell -->
+<nav class="bg-white/80 dark:bg-[#00345e]/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-[0_10px_40px_rgba(0,52,94,0.04)]">
+<div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+<div class="text-xl font-bold tracking-tighter text-[#00345e] dark:text-[#f8f9ff] font-headline">
+                Architectural Portfolio
+            </div>
+<div class="hidden md:flex items-center gap-8 font-label text-sm tracking-wide">
+<a class="text-[#2156ca] dark:text-[#dce9ff] font-bold border-b-2 border-[#2156ca] pb-1" href="#">Work</a>
+<a class="text-[#00345e]/70 dark:text-[#f8f9ff]/70 hover:text-[#00345e] dark:hover:text-[#f8f9ff] transition-colors" href="#">Process</a>
+<a class="text-[#00345e]/70 dark:text-[#f8f9ff]/70 hover:text-[#00345e] dark:hover:text-[#f8f9ff] transition-colors" href="#">About</a>
+<a class="text-[#00345e]/70 dark:text-[#f8f9ff]/70 hover:text-[#00345e] dark:hover:text-[#f8f9ff] transition-colors" href="#">Contact</a>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8">
+<!-- Hero Section -->
+<header class="max-w-4xl mx-auto text-center mb-32">
+<span class="label-md uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Portfolio Anthology</span>
+<h1 class="text-5xl md:text-7xl font-extrabold font-headline tracking-tighter mb-8 leading-tight">
+                Geometry &amp; <br/><span class="text-outline">Spatial Precision</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                A curated selection of six masterworks defined by the intersection of structural minimalism and functional fluidity.
+            </p>
+</header>
+<!-- Hexagonal Layout Section -->
+<section class="relative py-24 mb-32">
+<div class="hex-grid-container relative">
+<!-- Project Card 1 -->
+<div class="flex flex-col items-center group">
+<div class="w-64 h-64 rounded-full overflow-hidden bg-surface-container-low shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:scale-105 border border-outline-variant/15 relative">
+<img alt="Commercial structure" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Modern minimalist skyscraper facade with reflective blue glass and clean geometric steel lines against a clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrUML5vL2QUFPB7M4MFwQdP1Ov55fOgRSbduSCY979y3s2BbR1ndq6IfFoI_NTcZJD4-mKeqlBLJDtiqazdYGegwwkvKe1YR93nLoHd4Ug8XKfLUgA00pfjXcYG8ju_IN0Ge7bYsEfXtVKY2fAseUYvDf2HekhHoWKXHLgNSEfWhx7lhJkOPPcboUQ8LrBL2IGQWCnp2R3arH4-Yq_8rSw_c7wS4ySnncXvVZaMS2FPTK3i_8W8l3RNP928S1l2PPQnQgcmm_5sMzl"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="mt-6 text-center max-w-[200px]">
+<h3 class="font-headline font-bold text-xl mb-2">Vertex Plaza</h3>
+<p class="text-sm text-on-surface-variant leading-snug">Structural integrity meeting urban verticality in glass.</p>
+</div>
+</div>
+<!-- Project Card 2 (Offset) -->
+<div class="flex flex-col items-center group hex-offset">
+<div class="w-64 h-64 rounded-full overflow-hidden bg-surface-container-low shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:scale-105 border border-outline-variant/15 relative">
+<img alt="Interior workspace" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Minimalist office interior with white walls, light wood furniture, and soft diffused natural lighting coming from large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL3jzBieEc8Kg2JIIOXw_jts1C9HhWms2e5ZcjsgX9RD0HQ0oG5gAMybIeN52UFY6eEcFMQwmwCs9PX_jJvzpo4svEwJC27yTx9nJBKhe4y1aEtQlytsDFREFJYDpAvt4mE75zGRMImQ0GM6GUfvufolu60d9Vd1rTmcSUlXPGP6CUC5srBWKdehE7GUivPMJ34qdfLOqPp_5olapW0bMz6TUX4ytjNbHCiKKe3J74DMH9bGB0a-lnjJK1eHA0S8bdhmMJgMNX05Sm"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="mt-6 text-center max-w-[200px]">
+<h3 class="font-headline font-bold text-xl mb-2">Lumen Studio</h3>
+<p class="text-sm text-on-surface-variant leading-snug">A sanctuary of natural light designed for deep creative focus.</p>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="flex flex-col items-center group">
+<div class="w-64 h-64 rounded-full overflow-hidden bg-surface-container-low shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:scale-105 border border-outline-variant/15 relative">
+<img alt="Abstract architecture" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Stark white concrete spiral staircase viewed from above, creating a perfect geometric Fibonacci sequence in shadow and light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiImwVdElVK68YgP_jUnODCREmRdXjcw6HW6EA9XXPEFZ2ORXAc--JaeqgmpzM4P3QoFeb3rh0dNvw-qFOSOQ7SL9hT5NOLglTAegBStI4QZpAIdScqANTm5vApWGmj6a-6utI1bHe2gDwkqeur8Xwt__keb4nuvKpjChlFFA1T4VTG9HStkME7AxCZ6bEYavBcAAhQwuF-3aw1KyvTddpuIlpaMzZ0Y7g6soBs46tnD-NZL4A1LpabzTqCq20ZqoFMkHqemyq4HZG"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="mt-6 text-center max-w-[200px]">
+<h3 class="font-headline font-bold text-xl mb-2">Spiral Core</h3>
+<p class="text-sm text-on-surface-variant leading-snug">An exploration of mathematical curves in monolithic concrete.</p>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="flex flex-col items-center group">
+<div class="w-64 h-64 rounded-full overflow-hidden bg-surface-container-low shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:scale-105 border border-outline-variant/15 relative">
+<img alt="Concrete home" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Modern brutalist villa in a desert setting with sharp shadow play and vast open floor plan integration with nature" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLWU71jzjtNKD2QszRNK-r7-vOMiir2GDnOaOhAqxsIzWe66yRt2fYxFzw_kjpJIpcUr8MPHqqoCHyX6uhf2PIeCx7MSBd40CqchQ-XgaEYVLAwVJDSWr4xmpoOYIAzXSPXDQ38OodV33qgJAeO3PjQErGWStSO6rZnWxkIMdkXyND8BY1O4I0hgcm6zTSCXf956Md7Yc-YI2euOsHJ-4UdqVuMk_oQOxY6K45BA0TEsN736MfQaAQHWwsyDtv2bcypTs908aA5bvO"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="mt-6 text-center max-w-[200px]">
+<h3 class="font-headline font-bold text-xl mb-2">Arid House</h3>
+<p class="text-sm text-on-surface-variant leading-snug">Merging brutalist forms with the serenity of the landscape.</p>
+</div>
+</div>
+<!-- Project Card 5 (Offset) -->
+<div class="flex flex-col items-center group hex-offset">
+<div class="w-64 h-64 rounded-full overflow-hidden bg-surface-container-low shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:scale-105 border border-outline-variant/15 relative">
+<img alt="Modern lighting" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Detail of a minimalist brass pendant light hanging over a textured grey wall with elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAdMWL48ci41v15IHGCoMFaY6yKHU2YTeiugi5irfg3xnRq0JOtVMh8Emi-HqY4czQA3hGhefZiXaE-8khShJU3OAUoPfojDJO9NZuaxQmCRm_VoWaGNna2fDqLic-NU_iMb_xsH9xzh3iphasxAA7qYE8T5QticdaucqG0ZrIwhDWTw4pKb2toFqMfEjwS4Qwswf3GFyERXT0J2dae1YYP6frTlT3UxnPZkR48NvkMoEOHJnyPP32M9jR8k98Adb4p9x23bodO6jl"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="mt-6 text-center max-w-[200px]">
+<h3 class="font-headline font-bold text-xl mb-2">Aura Pavilion</h3>
+<p class="text-sm text-on-surface-variant leading-snug">Redefining atmospheric volume through subtle luminosity.</p>
+</div>
+</div>
+<!-- Project Card 6 -->
+<div class="flex flex-col items-center group">
+<div class="w-64 h-64 rounded-full overflow-hidden bg-surface-container-low shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:scale-105 border border-outline-variant/15 relative">
+<img alt="Glass building" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Low angle view of a glass facade reflecting autumn trees, blurring the lines between nature and construction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU5v9ZczotUO3EfZmNBkAExJY8r5pWhmtoKL79qw9tu8qxdvPnKCZGZ_m5elEw_GGE3NxQSyELA2ZvqKhPyHC0_wMj1ZmXtV-k-KveZF8gJ2UWHQAuy2InEPRKVJlMLy6KGSuc9vlMFCOiovZvnqPc5MCJeoam9hwc9N1c4vdLzsXyNH6d1E5kWEvoOx0GlnM45ffNVv92HF47G_MCB-DsJX7-6olv-QRtN5KVzG_W7xKc4R2EbguXnFZ1br_gzQc8uXU6Z9j_uj_h"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="mt-6 text-center max-w-[200px]">
+<h3 class="font-headline font-bold text-xl mb-2">Prism Hub</h3>
+<p class="text-sm text-on-surface-variant leading-snug">The intersection of glass translucency and shared space.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="max-w-3xl mx-auto mt-64 py-20 bg-surface-container-low rounded-xl text-center border border-outline-variant/10">
+<h2 class="font-headline text-3xl font-bold mb-6">Let's build the future together.</h2>
+<p class="text-on-surface-variant mb-10 max-w-lg mx-auto">Available for select architectural collaborations and consulting opportunities worldwide.</p>
+<a class="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-br from-primary to-primary-dim text-white rounded-md transition-all hover:shadow-2xl hover:shadow-primary/30 active:scale-95" href="mailto:studio@minimalist.arch">
+<span class="font-bold tracking-tight text-lg">studio@minimalist.arch</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<div class="mt-12 flex justify-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-semibold tracking-wider uppercase" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-semibold tracking-wider uppercase" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm font-semibold tracking-wider uppercase" href="#">Dribbble</a>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-[#f8f9ff] dark:bg-[#00345e] w-full py-12 border-t border-[#87b5f0]/15">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-['Manrope'] font-bold text-[#00345e] dark:text-[#f8f9ff]">
+                Architectural Minimalist
+            </div>
+<div class="flex gap-8 font-['Inter'] text-sm tracking-wide">
+<a class="text-[#00345e]/60 dark:text-[#f8f9ff]/60 hover:text-[#2156ca] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#00345e]/60 dark:text-[#f8f9ff]/60 hover:text-[#2156ca] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#2156ca] underline" href="mailto:studio@minimalist.arch">Email Us</a>
+</div>
+<div class="text-[#00345e]/60 dark:text-[#f8f9ff]/60 font-['Inter'] text-xs">
+                © 2024 Architectural Minimalist. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
